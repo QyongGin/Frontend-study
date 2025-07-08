@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <meta name="description" content="HTML 기본에 대해 설명"> 
+</head>
+<body>
+
+<!-- 📦 주요 시맨틱 태그와 쓰임새
+태그	의미	보통 쓰는 위치
+<header>	페이지/섹션의 머리말	페이지 전체나 article 안
+<nav>	내비게이션 (메뉴) 영역	메뉴바, 사이드바
+<main>	본문의 핵심 콘텐츠	페이지 1개에 1번만
+<article>	독립된 콘텐츠 조각	뉴스, 게시글, 블로그 글 등
+<section>	관련 콘텐츠 묶음	주제별 구분
+<aside>	부가 정보	사이드바, 광고, 관련글
+<footer>	바닥글	저작권, 연락처 등 -->
+  <header>
+  <h1>HTML 시작하기</h1>  
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">이탤릭체</a></li>
+      <li><a href="#">문단 강조</a></li>
+      <li><a href="#">블록 레벨, 인라인 레벨</a></li>
+      <li><a href="#">빈 요소</a></li>
+    </ul>
+    <form>
+      <!-- "/>" 이렇게 닫는 이유느느 코드 일관성, XHTML 호환성, VSCode 자동완성 -->
+      <input type="search" name="q" placeholder="Search query" />
+      <input type="submit" value="검색"/>
+    </form>
+  </nav>
+  
+  <main>
+    <article>
+      <section>
+  <!-- 이탤릭체 -->
+  <em>&lt;em&gt;은 이탤릭 강조 효과를 준다.</em>
+
+  <!-- 문단 강조 -->
+  <p>&lt;strong&gt;은 문단을 <strong>강조</strong>하는 효과를 줍니다.</p>
+
+  <!-- 블록 레벨과 인라인 레벨 -->
+  <p>&lt;p&gt;는 블록 레벨이므로 </p>
+  <p>줄이 나누어진다.</p>
+  <em>&lt;em&gt;은 </em>
+  <em>인라인 레벨이므로</em>
+  <em>줄이 나누어지지 않는다.</em><br><br>
+
+  <!-- 빈 요소(Empty elements) -->
+  <img src = "media/1장/ElvisPresley.png"><br><br>
+
+  <!-- 속성(Attributes) -->
+  <a href="https://developer.mozilla.org/ko/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax" title="Mdn web docs">참고 사이트</a>
+  <br><br>
+
+  <!-- 참과 거짓 속성(Boolean attributes) -->
+  <input type="text">
+  <input type="text" disabled>
+
+  <!-- 컨텐츠에 구조 입히기  -->
+  <h2>HTML 텍스트의 기본</h2>
+  <p>페이지의 단락은 &lt;p&gt;로 구성한다.</p>
+  <p>페이지의 제목은 heading으로 구성한다.</p>
+        </section>
+  <!-- Unordered -->
+  <ul>
+    <li>순서없는 리스트</li>
+    <li>ul로 감싼다.</li>
+    <li>li로 내용을 추가한다.</li>
+  </ul>
+
+  <!-- Ordered -->
+  <ol>
+    <li>순서 있는 리스트</li>
+    <li>ol로 감싼다.</li>
+    <li>똑같이 li로 내용을 추가한다.</li>
+  </ol>
+
+  <h2 class="egglist">계란볶음밥 레시피</h2>
+  <ul>
+    <caption>준비물</caption>
+    <li>계란 두 개</li>
+    <Li>밥</Li>
+    <li>간장</li>
+    <li>굴소스</li>
+    <li>케찹</li>
+    <li>파</li>
+  </ul>
+
+  <ol>
+    <caption>만드는 방법</caption>
+    <li>계란을 붓고 스크럼블로 만든다.</li>
+    <li><i>계란은 한쪽으로 모으고 파를 볶는다.</i></li>
+      <ul>
+        <li><u>계란을 다른 그릇에 옮기는게 더 낫다.</u></li>
+      </ul>
+    </li>
+    <li>다 익으면 <b>소스</b>들과 밥을 넣어 볶으면 끝.</li>
+  </ol>
+
+  <p>
+    나는 리그오브레전드 게임의 전적을 검색하는 사이트인 <a href="https://www.fow.lol/">Fow</a>를 애용한다.
+  </p>
+  <a href="https://www.fow.lol/" title="전적검색 사이트">이미지를 클릭하면 사이트로 이동합니다.<img src="media/2장/media/apple.png"></a>
+  
+
+  <!-- [5]텍스트 조작 고급기법  -->
+
+
+  <dl> <!-- 설명 목록 -->
+    <dt>벤달</dt> <!-- 용어 -->
+    <dd> <!-- 설명 -->
+      어떤 거리든 헤드 한방이라는 강력한 장점을 지님. 
+    </dd>
+    <dt>팬텀</dt>
+    <dd>
+      거리에 따라 데미지가 약해지지만, 탄알 궤적이 안보여 연막샷에 유리함.
+    </dd>
+    <dt>스팅어</dt>
+    <dd>아메리카팀 G2에서 이코 라운드에 셰리프 대신 사용하는 총. 근거리 교전에 강력함.</dd>
+    <dt>하나의 용어에 여러 개의 설명</dt>
+    <dd>설명 하나</dd>
+    <dd>설명 둘</dd>
+  </dl>
+
+  <p>다음은 블록 인용구입니다.</p>
+  <blockquote
+  cite="https://developer.mozilla.org/ko/docs/Web/HTML/Element/blockquote">
+  <p>
+    <strong>HTML <code>&lt;blockquote&gt;</code> 요소</strong> (또는 
+    <em>HTML 인용 블록 요소</em>)는 안쪽의 텍스트가 긴 인용문임을 나타냅니다.
+  </p>
+</blockquote>
+
+<p>
+  인용구 요소 - <code>&lt;q&gt;</code> - 는
+  <q
+  cite="https://developer.mozilla.org/ko/docs/Web/HTML/Element/q">
+  단락 나누기가 필요 없는 짧은 인용구를 위한 것입니다.
+</q>
+</p>
+
+<p>
+  <a href="/ko/docs/Web/HTML/Element/blockquote">
+    <cite>MDN 블록 인용구 페이지</cite></a>에 따르면
+</p>
+
+<blockquote
+  cite="https://developer.mozilla.org/ko/docs/Web/HTML/Element/blockquote">
+  <p>
+    <strong>HTML <code>&lt;blockquote&gt;</code> 요소</strong> (또는
+    <em>HTML 인용 블록 요소</em>)는 안쪽의 텍스트가 긴 인용문임을 나타냅니다.
+  </p>
+</blockquote>
+
+<p>
+  인용구 요소 — <code>&lt;q&gt;</code> — 는
+  <q cite="https://developer.mozilla.org/ko/docs/Web/HTML/Element/q">
+    단락 나누기가 필요 없는 짧은 인용구를 위한 것입니다.
+  </q>
+  — <a href="/ko/docs/Web/HTML/Element/q"><cite>MDN q 페이지</cite></a>.
+</p>
+
+<!-- 약어(줄임말) -->
+<p>
+  웹 문서를 구성하는 데는 하이퍼텍스트 마크업 언어인 <abbr>HTML</abbr>을 사용합니다.
+</p>
+<p>
+  제 생각에는 그린 <abbr title="목사">목사</abbr>가 전기톱으로 부엌에서 한 것 같아요.
+</p>
+<p>
+  <abbr>롤(리그오브레전드)</abbr>은 이젠 저무는 게임입니다.
+</p>
+
+<!-- 연락처 세부 사항 표시 -->
+ <address>
+  <p>
+    김용진<br />
+    인천<br />
+    계양구<br />
+    한국
+  </p>
+
+  <ul>
+    <li>전화번호: 010 9149 2930</li>
+    <li>이메일: dydwlsdkrak03@gmail.com</li>
+  </ul>
+ </address>
+
+<!-- 윗 첨자와 아래 첨자 -->
+<p>젠레스 존 제로가 벌써 1<sup>주년</sup>입니다.</p>
+<p>제 주연<sub>1돌</sub>도 이제는 안쓰는 추세더군요.</p>
+
+<!-- 컴퓨터 코드 나타내기 -->
+<pre><code>const para = document.querySelector('p');
+
+para.onclick = function() {
+  alert('Owww, stop poking me!');
+}</code></pre>
+
+<p>
+  You shouldn't use presentational elements like <code>&lt;font&gt;</code> and
+  <code>&lt;center&gt;</code>.
+</p>
+
+<p>
+  In the above JavaScript example, <var>para</var> represents a paragraph
+  element.
+</p>
+
+<p>Select all the text with <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd>.</p>
+
+<pre>$ <kbd>ping mozilla.org</kbd>
+<samp>PING mozilla.org (63.245.215.20): 56 data bytes
+64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms</samp></pre>
+
+<!-- 시간과 날짜 표시 -->
+<time datetime="2025-07-07">7 July 2025</time>
+</body>
+</html>
