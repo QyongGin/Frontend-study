@@ -12,7 +12,7 @@
 - CSS3 (Flexbox 또는 Grid)
 
 ## 📷 미리보기
-![preview]()
+![preview](./assets/images/preview.png)
 
 ## 🚀 실행 방법
 1. 이 저장소를 클론하세요
