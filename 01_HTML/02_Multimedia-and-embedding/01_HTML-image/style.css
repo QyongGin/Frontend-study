@@ -1,0 +1,6 @@
+
+/* css의 이미지는 HTML 이미지보다 위치 지정과 제어가 쉽지만 그저 장식용이다. 
+이미지에 의미가 있다면 콘텐츠 관점에서 HTML 이미지를 사용해야 한다. 순전히 장식용이라면 css 사용.*/
+p {
+    background-image: url(../../../Product-card-ui/assets/images/Strawberry.jpg);
+}
