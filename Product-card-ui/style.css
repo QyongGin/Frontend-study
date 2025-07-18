@@ -62,7 +62,7 @@ button:hover {
 
 
 
-.card-image {
+.card-images {
     /* 이미지와 아래 문단 사이 간격 */
     margin-bottom: 15px;
 
@@ -74,7 +74,7 @@ button:hover {
     margin-bottom: 15px;
 }
 
-.card-image img {
+.card-images img {
     position: absolute;
     top : 0;
     left : 0;
@@ -85,7 +85,7 @@ button:hover {
     background-color: #f4f4f4; /* 이미지 여백 대비 배경색 추가 */
 }
 
-.card-image img:hover {
+.card-images img:hover {
     /* 이미지 크기 1.1배 확대 */
     transform:scale(1.2);
 }
