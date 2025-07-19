@@ -1,3 +1,31 @@
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cadetblue;
+    padding: 1rem 2rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.logo{
+    font-size: 1.5rem;
+}
+
+.nav-btns button {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    background-color:aliceblue;
+    border: none;
+    color:black;
+    border-radius: 4px;
+    cursor:pointer;
+}
+
+.nav-buttons button:hover {
+    background-color: #2980b9;
+}
 
 body {
     font-family: "Roboto", sans-serif;
