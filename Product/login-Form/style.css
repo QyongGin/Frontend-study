@@ -1,0 +1,113 @@
+
+html {
+    /* 
+    1rem이 10px이 되도록 설정 
+    대부분 브라우저 기본 폰트 크기 16px 
+    16px의 62.5%가 10px 
+    이렇게 설정하면 1rem = 10px로 계산하면 되니 편리함
+    */
+
+    font-size: 62.5%;
+}
+
+body {
+    font-family:'Segoe UI', sans-serif;
+    /* 아주 연한 회색 */
+    background-color: #f5f5f5;
+    /* 컨테이너 생성 */
+    display: flex;
+    /* 컨테이너의 가운데 정렬 */
+    justify-content: center;
+    /* 모든 요소 가운데 정렬 */
+    align-items: center;
+    /* 
+    뷰 포트의 너비와 높이에 맞추기 vh 
+    사이트의 크기를 줄여도 동일한 크기로 보임 
+    */
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    /* 
+    root em 브라우저의 폰트 크기에 맞춘다. 
+    기본 16px 이라면 2rem = 32px 
+    */
+    padding: 2rem 2.5rem;
+    /* 테두리를 둥글게, 반경 10px */
+    border-radius: 10px;
+    /* 수평 0 수직 4px 흐림 반경 10px */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    /* 정렬 방향 column 열 */
+    flex-direction: column;
+}
+
+label {
+    /* top (left,right) bottom */
+    margin: 10px 0 5px;
+    /* 글꼴 굵기 굵게 */
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    /* 디자인의 일관성을 위해 이런 radius 같은 경우는 px로 지정 */
+    border-radius: 6px;
+    font-size: 1.6rem;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #0066cc;
+    color: white;
+    font-weight: bold;
+    /*
+    input, button 같은 특정 요소는 브라우저의 기본 테두리가 적용된다.
+    이를 없애고 원하는 테두리를 만들기 위해 사용 
+     */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    /* 
+    transition 시간. 어떤 변화가 일어나는 과정을 제어 
+    transform 형태. 요소의 모양이나 위치를 변형
+    */
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #004999;
+}
+
+.switch {
+    text-align: center;
+    margin-top: 15px;
+    color: #0066cc;
+    text-decoration: none;
+    margin-top: 10px;
+    /* 
+    inline은 margin이 적용되지 않음 
+    로그인 버튼과 거리를 벌리기 위해 inline-block 사용
+    width, height, margin, padding 사용 가능 
+    */
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.switch:hover {
+    text-decoration: underline;
+}
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 폼</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>로그인</h2>
+        <form>
+            <!-- 
+            label, input은 단짝 label의 for, input의 id를 통일시키면 연결된다.
+            이러면 입력 칸의 역할을 사용자에게 알려주는 label의 텍스트를 클릭해도
+            input에 자동으로 커서가 활성화된다. label이 있어야 스크린 리더가 입력 칸이 무슨 용도인지
+            읽게 된다.
+            input type은 입력받을 데이터 종류를 결정한다.
+            -->
+            <label for="email">이메일</label>
+            <input type="email" id="email" placeholder="example@example.com">
+            <label for="password">비밀번호</label>
+            <input type="password" id="password" placeholder="비밀번호">
+
+            <button type="submit">로그인</button>
+        </form>
+
+        <a href="register.html" class="switch">회원가입</a>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
