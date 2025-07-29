@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do 리스트</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>📝 To-Do 리스트</h1>
+
+        <!-- 
+        form: 사용자가 입력한 여러 데이터를 하나의 패키지로 묶어 서버에 제출하기 위한 영역
+        주로 회원가입, 로그인, 게시글 작성처럼 여러 정보 묶어서 서버에 보낼 때 사용 Enter키로도 제출 가능
+        label: input이 무엇을 위한 것인지 명확히 알려주는 역할. 반대로 이미 명확하다면 필요가 없다.
+        -->
+
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="할 일"/>
+            <button type="submit">추가</button>
+        </form>
+
+        <ul id="todo-list">
+            <!-- 할 일 목록 -->
+        </ul>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
