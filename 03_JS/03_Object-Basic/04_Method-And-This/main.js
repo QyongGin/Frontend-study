@@ -133,3 +133,28 @@ let calculator = {
 calculator.read();
 alert(calculator.sum());
 alert(calculator.mul());
+
+// 체이닝 
+
+let ladder = {
+    step: 0,
+    up() {
+        this.step++;
+        return this; // 객체 자기 자신(ladder)을 반환하여 체이닝.
+    },
+    down() {
+        this.step--;
+        return this;
+    },
+    showStep: function() {
+        alert(this.step);
+        return this;
+    }
+};
+
+ladder
+    .up() // step +1, 현재 ladder 띄워짐.
+    .up() // 띄워진 ladder에서 up메서드 실행
+    .down()
+    .showStep();
+
